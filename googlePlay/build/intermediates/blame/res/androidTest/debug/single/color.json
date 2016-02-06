@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_primary_text_holo_light.xml",
+        "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
         "merged": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_signin_btn_text_light.xml",
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\common_signin_btn_text_light.xml"
     },
@@ -12,7 +16,19 @@
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\wallet_primary_text_holo_light.xml"
     },
     {
+        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_signin_btn_text_light.xml",
+        "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\common_signin_btn_text_dark.xml",
+        "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\common_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_secondary_text_holo_dark.xml",
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\color\\wallet_secondary_text_holo_dark.xml"
     }
 ]
