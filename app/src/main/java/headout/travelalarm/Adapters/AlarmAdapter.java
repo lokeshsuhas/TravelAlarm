@@ -11,11 +11,12 @@ import java.util.Collections;
 import java.util.List;
 
 import headout.travelalarm.Models.TravelAlarm;
+import rx.functions.Action1;
 
 /**
  * Created by Lokesh on 07-02-2016.
  */
-final class AlarmAdapter extends BaseAdapter
+public class AlarmAdapter extends BaseAdapter implements Action1<List<TravelAlarm>>
 {
     private final LayoutInflater inflater;
 
@@ -51,5 +52,16 @@ final class AlarmAdapter extends BaseAdapter
         ((TextView) convertView).setText(item.getStart()+","+item.getDest());
 
         return convertView;
+    }
+
+    public void update(List<TravelAlarm> travelAlarms) {
+        this.items = travelAlarms;
+        notifyDataSetChanged();
+    }
+
+    @Override
+    public void call(List<TravelAlarm> travelAlarms) {
+        this.items = travelAlarms;
+        notifyDataSetChanged();
     }
 }

@@ -6,9 +6,13 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
@@ -45,6 +49,7 @@ import headout.travelalarm.Route.GoogleRouting;
 import headout.travelalarm.Route.Route;
 import headout.travelalarm.Route.RoutingListener;
 import headout.travelalarm.fragments.AlarmDetailFragment;
+import me.drakeet.materialdialog.MaterialDialog;
 
 public class AddAlarmActivity extends AppCompatActivity implements RoutingListener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
     private static final LatLngBounds BOUNDS_JAMAICA = new LatLngBounds(new LatLng(-57.965341647205726, 144.9987719580531),
@@ -59,6 +64,8 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
     AutoCompleteTextView destination;
     @InjectView(R.id.send)
     ImageView send;
+    @InjectView(R.id.toolbar)
+    Toolbar toolBar;
     private String LOG_TAG = "AddAlarm";
     private PlaceAutoCompleteAdapter mAdapter;
     private ProgressDialog progressDialog;
@@ -70,7 +77,7 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_alarm);
         ButterKnife.inject(this);
-
+        setSupportActionBar(toolBar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         polylines = new ArrayList<>();
@@ -351,6 +358,23 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
                     .build();
             routing.execute();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_empty, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

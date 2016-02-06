@@ -25,22 +25,18 @@ public class TravelAlarmBuilder {
     public static final String WAKEUPTYPE = "wakeuptype";
 
 
-    public static Func1<Cursor, List<TravelAlarm>> MAP = new Func1<Cursor, List<TravelAlarm>>() {
+    public static Func1<Cursor, TravelAlarm> MAP = new Func1<Cursor, TravelAlarm>() {
         @Override
-        public List<TravelAlarm> call(final Cursor cursor) {
+        public TravelAlarm call(final Cursor cursor) {
             try {
-                List<TravelAlarm> values = new ArrayList<>(cursor.getCount());
-
-                while (cursor.moveToNext()) {
                     long id = DB.getLong(cursor, ID);
                     String start = DB.getString(cursor, START);
                     String dest = DB.getString(cursor, DEST);
                     int kms = DB.getInt(cursor, KMS);
                     int eta = DB.getInt(cursor, ETA);
                     int wakeType = DB.getInt(cursor,WAKEUPTYPE);
-                    values.add(new TravelAlarm().setId(id).setStart(start).setDest(dest).setKms(kms).setETA(eta).setWakeUpType(wakeType));
-                }
-                return values;
+                   return new TravelAlarm().setId(id).setStart(start).setDest(dest).setKms(kms).setETA(eta).setWakeUpType(wakeType);
+
             } finally {
                 cursor.close();
             }

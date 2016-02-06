@@ -92,12 +92,12 @@
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\common_signin_btn_text_pressed_light.9.png",
-        "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\common_signin_btn_text_pressed_light.9.png"
-    },
-    {
         "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\common_signin_btn_text_pressed_dark.9.png",
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\common_signin_btn_text_pressed_dark.9.png"
+    },
+    {
+        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\common_signin_btn_text_pressed_light.9.png",
+        "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\common_signin_btn_text_pressed_light.9.png"
     },
     {
         "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\common_signin_btn_text_focus_dark.9.png",
