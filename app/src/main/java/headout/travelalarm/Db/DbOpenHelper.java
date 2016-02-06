@@ -14,8 +14,8 @@ public class DbOpenHelper extends SQLiteOpenHelper {
     private static final String CREATE_ALARMS = ""
             + "CREATE TABLE alarms( _id INTEGER NOT NULL PRIMARY KEY,start FLOAT NOT NULL,dest FLOAT NOT NULL,kms FLOAT NOT NULL DEFAULT 0,eta INTEGER NOT NULL,wakeuptype INTEGER NOT NULL DEFAULT 0)";
 
-    public DbOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, "travelalarm.db", null, version);
+    public DbOpenHelper(Context context) {
+        super(context, "travelalarm.db", null, VERSION);
     }
 
 

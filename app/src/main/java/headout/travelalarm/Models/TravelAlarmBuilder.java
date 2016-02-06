@@ -33,8 +33,8 @@ public class TravelAlarmBuilder {
 
                 while (cursor.moveToNext()) {
                     long id = DB.getLong(cursor, ID);
-                    float start = DB.getFloat(cursor, START);
-                    float dest = DB.getFloat(cursor, DEST);
+                    String start = DB.getString(cursor, START);
+                    String dest = DB.getString(cursor, DEST);
                     int kms = DB.getInt(cursor, KMS);
                     int eta = DB.getInt(cursor, ETA);
                     int wakeType = DB.getInt(cursor,WAKEUPTYPE);
@@ -55,12 +55,12 @@ public class TravelAlarmBuilder {
             return this;
         }
 
-        public Builder start(Float start) {
+        public Builder start(String start) {
             values.put(START, start);
             return this;
         }
 
-        public Builder dest(Float dest) {
+        public Builder dest(String dest) {
             values.put(DEST, dest);
             return this;
         }

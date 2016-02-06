@@ -44,6 +44,7 @@ import headout.travelalarm.Route.GoogleAbstractRouting;
 import headout.travelalarm.Route.GoogleRouting;
 import headout.travelalarm.Route.Route;
 import headout.travelalarm.Route.RoutingListener;
+import headout.travelalarm.fragments.AlarmDetailFragment;
 
 public class AddAlarmActivity extends AppCompatActivity implements RoutingListener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
     private static final LatLngBounds BOUNDS_JAMAICA = new LatLngBounds(new LatLng(-57.965341647205726, 144.9987719580531),
@@ -408,6 +409,8 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
         options.icon(BitmapDescriptorFactory.fromResource(R.drawable.end_green));
         map.addMarker(options);
 
+        AlarmDetailFragment fragment = AlarmDetailFragment.newInstance();
+        fragment.show(getFragmentManager(),"");
 
 
     }

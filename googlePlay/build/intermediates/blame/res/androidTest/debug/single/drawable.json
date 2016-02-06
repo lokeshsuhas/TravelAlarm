@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_signin_btn_text_light.xml",
-        "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_text_light.xml"
-    },
-    {
         "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_signin_btn_icon_light.xml",
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_icon_light.xml"
     },
@@ -16,19 +12,7 @@
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_signin_btn_text_dark.xml",
-        "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_signin_btn_icon_light.xml",
-        "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_icon_light.xml"
-    },
-    {
         "merged": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_signin_btn_icon_dark.xml",
         "source": "C:\\HeadOut\\Android\\TravelAlarm\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_signin_btn_icon_dark.xml",
-        "source": "C:\\HeadOut\\Android\\TravelAlarm\\googlePlay\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_signin_btn_icon_dark.xml"
     }
 ]
