@@ -1,0 +1,1 @@
+include ':app', ':googlePlay', ':saripaar', ':lokesh.core'

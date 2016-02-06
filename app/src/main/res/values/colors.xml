@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#9E9E9E</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="searchText">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <!--<color name="primarybg">#E64748</color>-->
+    <!--<color name="primarybg">#ED5454</color>-->
+    <color name="primarybg">#FFEB3B</color>
+    <color name="primary_presses">#EFDD3A</color>
+    <color name="bgColor">#ffffff</color>
+    <color name="cpb_black">#000</color>
+    <color name="cpb_grayscale">#F4F4F4</color>
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_grey_presses">#ffE1E1E1</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+    <color name="cpb_teal">#4ABC96</color>
+    <color name="cpb_teal_presses">#5CC3A0</color>
+    <color name="cpb_yellow">#FFEB3B</color>
+    <color name="color_accent">#7c4dff</color>
+    <color name="color_success">#3CCD88</color>
+    <color name="color_error">#f44336</color>
+    <color name="filter_color">#686CFB</color>
+    <color name="filter_color_presses">#777BFB</color>
+    <color name="srv_icon_color_default">#454545</color>
+    <color name="transparent_black">#80000000</color>
+
+    <color name="rest_cuinse">#4ABC96</color>
+
+    <color name="menu_address">#357180</color>
+    <color name="menu_alerts">#49A0AE</color>
+    <color name="menu_chats">#EDC92C</color>
+    <color name="menu_home">#E84849</color>
+    <color name="menu_offers">#49A0AE</color>
+    <color name="menu_orders">#357180</color>
+    <color name="menu_settings">#D8DBBA</color>
+    <color name="menu_subs">#F2BE3E</color>
+    <color name="menu_wallet">#FFCE00</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+</resources>
