@@ -52,8 +52,12 @@ public class AlarmDetailFragment extends DialogFragment implements Validator.Val
     String dest;
     int eta;
     int kms;
-    public static AlarmDetailFragment newInstance() {
+    public static AlarmDetailFragment newInstance(LatLng start, LatLng dest,int eta, int kms) {
         AlarmDetailFragment fragment = new AlarmDetailFragment();
+        fragment.start = start.toString();
+        fragment.dest = dest.toString();
+        fragment.eta = eta;
+        fragment.kms = kms;
         return fragment;
     }
 

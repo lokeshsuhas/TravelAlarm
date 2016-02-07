@@ -49,19 +49,14 @@ public class AlarmAdapter extends BaseAdapter implements Action1<List<TravelAlar
         }
 
         TravelAlarm item = getItem(position);
-        ((TextView) convertView).setText(item.getStart()+","+item.getDest());
+        ((TextView) convertView).setText(item.getStart() + "," + item.getDest());
 
         return convertView;
     }
 
-    public void update(List<TravelAlarm> travelAlarms) {
-        this.items = travelAlarms;
-        notifyDataSetChanged();
-    }
-
     @Override
     public void call(List<TravelAlarm> travelAlarms) {
-        this.items = travelAlarms;
+        items = travelAlarms;
         notifyDataSetChanged();
     }
 }

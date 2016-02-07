@@ -50,6 +50,7 @@ import headout.travelalarm.Route.Route;
 import headout.travelalarm.Route.RoutingListener;
 import headout.travelalarm.fragments.AlarmDetailFragment;
 import me.drakeet.materialdialog.MaterialDialog;
+import rx.Observable;
 
 public class AddAlarmActivity extends AppCompatActivity implements RoutingListener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
     private static final LatLngBounds BOUNDS_JAMAICA = new LatLngBounds(new LatLng(-57.965341647205726, 144.9987719580531),
@@ -222,6 +223,7 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
                         final Place place = places.get(0);
 
                         start = place.getLatLng();
+                        destination.requestFocus();
                     }
                 });
 
@@ -234,7 +236,6 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
                 final PlaceAutoCompleteAdapter.PlaceAutocomplete item = mAdapter.getItem(position);
                 final String placeId = String.valueOf(item.placeId);
                 Log.i(LOG_TAG, "Autocomplete item selected: " + item.description);
-
             /*
              Issue a request to the Places Geo Data API to retrieve a Place object with additional
               details about the place.
@@ -405,6 +406,8 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
         }
 
         polylines = new ArrayList<>();
+        int distance = 0;
+        int eta =0;
         //add route(s) to the map.
         for (int i = 0; i < route.size(); i++) {
 
@@ -417,8 +420,9 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
             polyOptions.addAll(route.get(i).getPoints());
             Polyline polyline = map.addPolyline(polyOptions);
             polylines.add(polyline);
-
-            Toast.makeText(getApplicationContext(), "Route " + (i + 1) + ": distance - " + route.get(i).getDistanceValue() + ": duration - " + route.get(i).getDurationValue(), Toast.LENGTH_SHORT).show();
+            distance += route.get(i).getDistanceValue();
+            eta += route.get(i).getDurationValue();
+            //Toast.makeText(getApplicationContext(), "Route " + (i + 1) + ": distance - " + route.get(i).getDistanceValue() + ": duration - " + route.get(i).getDurationValue(), Toast.LENGTH_SHORT).show();
         }
 
         // Start marker
@@ -433,7 +437,8 @@ public class AddAlarmActivity extends AppCompatActivity implements RoutingListen
         options.icon(BitmapDescriptorFactory.fromResource(R.drawable.end_green));
         map.addMarker(options);
 
-        AlarmDetailFragment fragment = AlarmDetailFragment.newInstance();
+
+        AlarmDetailFragment fragment = AlarmDetailFragment.newInstance(start,end,eta,distance);
         fragment.show(getFragmentManager(),"");
 
 

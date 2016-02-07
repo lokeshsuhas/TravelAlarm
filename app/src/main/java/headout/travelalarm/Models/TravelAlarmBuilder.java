@@ -3,9 +3,6 @@ package headout.travelalarm.Models;
 import android.content.ContentValues;
 import android.database.Cursor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import headout.travelalarm.Db.DB;
 import rx.functions.Func1;
 
@@ -29,16 +26,15 @@ public class TravelAlarmBuilder {
         @Override
         public TravelAlarm call(final Cursor cursor) {
             try {
-                    long id = DB.getLong(cursor, ID);
-                    String start = DB.getString(cursor, START);
-                    String dest = DB.getString(cursor, DEST);
-                    int kms = DB.getInt(cursor, KMS);
-                    int eta = DB.getInt(cursor, ETA);
-                    int wakeType = DB.getInt(cursor,WAKEUPTYPE);
-                   return new TravelAlarm().setId(id).setStart(start).setDest(dest).setKms(kms).setETA(eta).setWakeUpType(wakeType);
+                long id = DB.getLong(cursor, ID);
+                String start = DB.getString(cursor, START);
+                String dest = DB.getString(cursor, DEST);
+                int kms = DB.getInt(cursor, KMS);
+                int eta = DB.getInt(cursor, ETA);
+                int wakeType = DB.getInt(cursor, WAKEUPTYPE);
+                return new TravelAlarm().setId(id).setStart(start).setDest(dest).setKms(kms).setETA(eta).setWakeUpType(wakeType);
 
             } finally {
-                cursor.close();
             }
         }
     };
