@@ -21,11 +21,13 @@ import com.google.android.gms.maps.model.LatLng;
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 import com.squareup.sqlbrite.BriteDatabase;
+import com.squareup.sqlbrite.SqlBrite;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
+import headout.travelalarm.Db.DbOpenHelper;
 import headout.travelalarm.Models.TravelAlarmBuilder;
 import headout.travelalarm.R;
 import headout.travelalarm.Util;
@@ -44,7 +46,6 @@ public class AlarmDetailFragment extends DialogFragment implements Validator.Val
     LinearLayout innercontentBox;
     LinearLayout thankyouBox;
     LinearLayout controlBox;
-    @Inject
     BriteDatabase db;
     boolean isDone = false;
     String start;
@@ -91,7 +92,11 @@ public class AlarmDetailFragment extends DialogFragment implements Validator.Val
                 wakeTime.setChecked(!check);
             }
         });
-
+        SqlBrite sqlBrite = SqlBrite.create(new SqlBrite.Logger() {
+            @Override public void log(String message) {
+            }
+        });
+        db = sqlBrite.wrapDatabaseHelper(new DbOpenHelper(context));
         wakeTime.setOncheckListener(new CheckBox.OnCheckListener() {
             @Override
             public void onCheck(boolean check) {
